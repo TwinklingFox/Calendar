@@ -1,0 +1,46 @@
+<resources xmlns:tools="http://schemas.android.com/tools">
+    <!-- Base application theme. -->
+    <style name="Base.Theme.Calendar" parent="Theme.AppCompat.DayNight.DarkActionBar">
+        <item name="colorPrimary">@color/dark_emerald</item>
+        <item name="colorSecondary">@color/emerald</item>
+    </style>
+
+    <style name="MainQuoteTextStyle">
+        <item name="android:fontFamily">@font/raleway_regular</item>
+        <item name="android:textColor">@color/black</item>
+    </style>
+
+    <style name="QuoteTextStyle" parent="MainQuoteTextStyle">
+        <item name="android:textSize">14sp</item>
+    </style>
+
+    <style name="AuthorTextStyle" parent="MainQuoteTextStyle">
+        <item name="android:textSize">12sp</item>
+    </style>
+
+    <style name="MainNoteTextStyleRecyclerView">
+        <item name="fontFamily">@font/roboto_regular</item>
+        <item name="android:textColor">@color/black</item>
+    </style>
+
+    <style name="HeaderTextStyleRecyclerView" parent="MainNoteTextStyleRecyclerView">
+        <item name="android:textSize">20sp</item>
+    </style>
+
+    <style name="NoteTextStyleRecyclerView" parent="MainNoteTextStyleRecyclerView">
+        <item name="android:textSize">14sp</item>
+    </style>
+
+    <style name="MainNoteTextStyle">
+        <item name="fontFamily">@font/roboto_regular</item>
+        <item name="android:textColor">@color/black</item>
+    </style>
+
+    <style name="HeaderTextStyle" parent="MainNoteTextStyle">
+        <item name="android:textSize">22sp</item>
+    </style>
+
+    <style name="NoteTextStyle" parent="MainNoteTextStyle">
+        <item name="android:textSize">16sp</item>
+    </style>
+</resources>

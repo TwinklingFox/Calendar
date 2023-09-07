@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent">
+
+        <TextView
+            android:id="@+id/quoteTextView"
+            style="@style/QuoteTextStyle"
+            android:layout_width="match_parent"
+            android:layout_height="64dp"
+            android:layout_marginTop="6dp"
+            android:layout_marginBottom="6dp"
+            android:gravity="center"
+            tools:ignore="TextSizeCheck"
+            tools:text="@string/sample_quote" />
+
+        <TextView
+            android:id="@+id/authorTextView"
+            style="@style/AuthorTextStyle"
+            android:layout_width="match_parent"
+            android:layout_height="14dp"
+            android:layout_marginBottom="12dp"
+            android:textAlignment="textEnd"
+            tools:ignore="TextSizeCheck"
+            tools:text="@string/sample_author" />
+
+        <CalendarView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="12dp"
+            android:background="@drawable/views_shape"/>
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/recyclerView"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="12dp"
+            tools:listitem="@layout/note" />
+    </LinearLayout>
+</androidx.constraintlayout.widget.ConstraintLayout>
